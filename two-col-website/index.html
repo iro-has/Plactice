@@ -38,7 +38,10 @@
                 <h3>スマスロSBJ</h3>
             </div>            
             <div class="page-nav-list-wrapper">
-                <h3>解説ページMENU</h3>
+                <div class="page-nav-list-title">
+                    <i class="fa-solid fa-bars"></i>
+                    <h3>解説ページMENU</h3>
+                </div>                
                 <div class="page-nav-list">
                     <p>基本・攻略</p>
                     <ul class="nav-icon">
@@ -195,9 +198,9 @@
                 <h2>【SBJ（スマスロ）】<br>初当りのボーナスについて</h2>
                 <p>スマスロSBJ</p>
             </section>
-            <nav>
+            <div class="content-nav">
                 <!-- 目次の部分だけ灰色であとは枠線で区切る -->
-                <p>目次</p>
+                <p id="content-nav-title">目次</p>
                 <!-- 各コンテンツの場所に移動 -->
                 <ul class="content-list">
                     <li><a href="#first-bonas">初当り時のボーナス</a></li>
@@ -205,31 +208,34 @@
                     <li><a href="#bonas-sorting">ボーナスの振り分け</a></li>
                     <li><a href="#bonas-level">ボーナスレベルチェック</a></li>
                 </ul>
-            </nav>
+            </div>
 
             <div class="advertisement">
                 <!-- 文字をうすい灰色に -->
                 <p>広告の下にコンテンツが続きます</p>
-                <img src="#" alt="広告">
+                <img src="./images/advertisement-image.png" alt="広告">
             </div>
 
             <section class="content">
                 <div id="first-bonas" class="first-bonas">
-                    <!-- h4を青背景白文字に -->
-                    <h4>初当りのボーナス</h4>
-                    <img src="./images/bonas-start.jpg" alt="ボーナス開始画面">
+                    <!-- h4を青背景白文字に 文字の前にアイコンを使いたい-->
+                    <div class="content-title">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <h4>初当りのボーナス</h4>
+                    </div>                    
+                    <img src="./images/bonas-start.jpg" alt="ボーナス開始画面" class="bonas-start-img">
                     <!-- caption部分を中央揃えの白文字黒背景 -->
                     <div class="text-container">
-                        <ul class="text-container">
-                        <li class="caption">突入契機</li>
-                        <li>・レア役での抽選 <br>・ボーナス高確率中の抽選<br>など</li>
-                        <li class="caption">性能</li>
-                        <li>・リオチャンス高確率当選をかけた初当りボーナス</li>
-                        <li>・純増：約5.1枚/G</li>
-                        <li>・ビッグボーナス後はリオチャンス高確率へ</li>
-                        <li>・レギュラーボーナス後は通常へ<br>└通常ゲーム数は前回のものを引き継ぐ</li>
-                        <li>・初当り時のボーナス種別は毎ゲーム抽選により変動する<br>└狙え役（リプレイ or 3枚役）成立で決定</li>
-                        <li>・ボーナス準備中（✕・？・？消化後）はレア役成立でチャンス<br>└次Gに狙え役（リプレイ or 3枚役）成立で青7ビッグボーナス濃厚!?</li>
+                        <ul class="first-bonas-list">
+                            <li class="caption">突入契機</li>
+                            <li>・レア役での抽選 <br>・ボーナス高確率中の抽選<br>など</li>
+                            <li class="caption">性能</li>
+                            <li>・リオチャンス高確率当選をかけた初当りボーナス</li>
+                            <li>・純増：約5.1枚/G</li>
+                            <li>・ビッグボーナス後はリオチャンス高確率へ</li>
+                            <li>・レギュラーボーナス後は通常へ<br>└通常ゲーム数は前回のものを引き継ぐ</li>
+                            <li>・初当り時のボーナス種別は毎ゲーム抽選により変動する<br>└狙え役（リプレイ or 3枚役）成立で決定</li>
+                            <li>・ボーナス準備中（✕・？・？消化後）はレア役成立でチャンス<br>└次Gに狙え役（リプレイ or 3枚役）成立で青7ビッグボーナス濃厚!?</li>
                         </ul>
                     </div>
                     <!-- 目次に戻る機能、ホバーしたときに赤文字になる。＋ボタンっぽい見た目 -->
@@ -313,7 +319,7 @@
                 <div class="advertisement">
                     <!-- 文字をうすい灰色に -->
                     <p>広告の下にコンテンツが続きます</p>
-                    <img src="#" alt="広告">
+                    <img src="./images/advertisement-image.png" alt="広告">
                 </div>
 
                 <div id="bonas-level" class="bonas-level">

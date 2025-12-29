@@ -22,13 +22,13 @@ body {
     padding: 1rem;
     overflow-y: auto;
     position: sticky;
-    top: 2rem;
+    top: 0.5rem;
     border: solid 0.5px #aaaaaa;
     
 }
 main {
     flex: 1;
-    padding: 20px;
+    padding: 0.5rem;
 }
 /* ヘッダー部分 */
 .header-content {
@@ -67,16 +67,21 @@ main {
     background-color: #1146a8;
     padding:  0.5rem;
 }
-.side-header h3, .page-nav-list-wrapper h3 {
+.side-header h3, .page-nav-list-title {
     font-size: 1.5rem;
     color: #ffffff;
 }
 .page-nav-list-wrapper {
     margin-top: 0.25rem;
 }
-.page-nav-list-wrapper h3 {
+.page-nav-list-title {
+    display: flex;
     background-color: #1146a8;
     padding: 0.75rem;
+}
+.page-nav-list-title i {
+    display: block;
+    margin-right: 1rem;
 }
 .page-nav-list {
     background-color: #f0f4f3;
@@ -92,6 +97,74 @@ main {
     justify-content: space-between;
     padding: 0.75rem;
     color:#1a6afe;
+    border-bottom:3px #000000;
 }
 
 /* メイン部分 */
+.title {
+    border-bottom: solid 2px #aaaaaa;
+    padding: 1rem;
+}
+.title h2 {
+    font-size: 2rem;
+    color: #1146a8;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.title p {
+    padding: 0 0 0 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+/* 目次コンテンツ */
+.content-nav {
+    border: 1px solid #d3d3d3;
+    padding: 0.25rem;
+    margin:2rem 1rem;
+}
+.content-nav p {
+    padding: 0.125rem 0.5rem;
+    background-color: #ededed;
+    border: 0.5px solid #d3d3d3;
+} 
+.content-list li {
+    padding: 0.5rem 1rem;
+    color:#1a6afe;
+    font-weight: 400;
+    border: 0.5px solid #d3d3d3;
+}
+/* 広告コンテンツ */
+.advertisement {
+    text-align: center;
+    padding: auto;
+    margin: 5rem auto;
+}
+.advertisement p {
+    margin: 1.25rem auto;
+    color: #aaaaaa;
+}
+.advertisement img {
+    display: block;
+    border: 1px solid #d3d3d3;
+    margin: 0 auto;
+}
+/* メインコンテンツ */
+/* 初当りのボーナス */
+.content-title {
+    display: flex;
+    background-color: #1a6afe;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+.content-title i {
+    display: block;
+    margin-right: 1rem;
+}
+.bonas-start-img {
+    display: block;
+    margin: 1rem auto;
+}
+.text-container {
+    margin: 0 auto;
+    border: 1px solid #000000;
+}
