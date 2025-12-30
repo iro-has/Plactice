@@ -285,5 +285,8 @@ main {
 }
 /* 示唆内容部分 */
 .sub-content-title {
-
+    border: 1px solid #1a6afe;
+    border-left: 15px solid #1a6afe;
+    padding: 0.5rem;
+    margin: 2rem 0.5rem 0 0.5rem;
 }
