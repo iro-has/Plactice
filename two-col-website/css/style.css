@@ -20,6 +20,7 @@ body {
     height: 100vh;
     margin-right: 2%;
     padding: 1rem;
+    padding-bottom: 5rem;
     overflow-y: auto;
     position: sticky;
     top: 0.5rem;
@@ -29,6 +30,7 @@ body {
 main {
     flex: 1;
     padding: 0.5rem;
+    padding-bottom: 10rem;
 }
 /* ヘッダー部分 */
 .header-content {
@@ -65,7 +67,7 @@ main {
 
 .side-header {
     background-color: #1146a8;
-    padding:  0.5rem;
+    padding:  0.75rem;
 }
 .side-header h3, .page-nav-list-title {
     font-size: 1.5rem;
@@ -76,12 +78,13 @@ main {
 }
 .page-nav-list-title {
     display: flex;
+    gap: 1rem;
     background-color: #1146a8;
-    padding: 0.75rem;
+    padding: 0.75rem 1rem;
 }
 .page-nav-list-title i {
     display: block;
-    margin-right: 1rem;
+    transform: translateY(3px);
 }
 .page-nav-list {
     background-color: #f0f4f3;
@@ -149,33 +152,43 @@ main {
     margin: 0 auto;
 }
 /* メインコンテンツ */
-/* 初当りのボーナス */
+/* コンテンツの見出し */
 .content-title {
     display: flex;
     background-color: #1a6afe;
+    gap: 1rem;
     padding: 0.5rem 1rem;
     color: #fff;
+    margin: 2rem auto;
 }
 .content-title i {
     display: block;
-    margin-right: 1rem;
+    font-size: 1.125rem;
+    transform: translateY(1px);
 }
+/* 初当りのボーナス */
 .bonus-start-img {
     display: block;
-    margin: 1rem auto;
+    margin: 0 auto;
 }
 /* テキストボックス */
+.text-container {
+    margin: 2rem;
+}
 .text-container ul {
-    border: 0.5px solid #000000;
+    border: 0.5px solid #000;
 }
 .text-container li {
-    border-bottom: 0.5px solid #000000;
-    padding: 0.125rem;
+    font-size: 1.125rem;
+    border-bottom: 0.5px solid #000;
+    padding: 0.25rem;
 }
 .text-container li:last-child {
     border-bottom: none;
 }
-.caption {
+.caption,
+.text-container th {
+    font-weight: 400;
     background-color: #505050;
     text-align: center;
     color: #ffffff;
@@ -183,9 +196,94 @@ main {
 .text-container table {
     width: 100%;
     border-collapse: collapse;
+    border:1px solid #000;
 }
 .text-container th,
 .text-container td {
     border: 1px solid #000;
     padding: 0.125rem;
+    vertical-align: middle;
+}
+/* 目次へ戻るボタン設定 */
+.back-btn {
+    display: inline-block;
+    background-color: #6b6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #4f4f4f;
+}
+.back-btn:hover {
+    background-color: #5e5e5e;
+}
+.back-btn:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+/* テーブル設定 */
+.bonus-info {                       /* 左側 */
+    background-color: #eaffff;
+}
+.bonus-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.bonus-info img {                   /* 画像サイズ調整 */
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    height: auto;
+}
+.bonus-detail .payout {             /* 右側 */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.bonus-detail {                     /* 右側セル */
+    text-align: center;
+}
+.note {                             /* 赤枠メッセージ */
+    border: 1px solid red;
+    color: red;
+    padding: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+/* ポイント部分 */
+.sub-point {
+    background-color: #ffd7fa;
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+.sub-point-title {                 /*ポイントタイトル */
+    display: flex;
+    color: red;
+}
+.sub-point-title h5 {
+    margin: 0 0.25rem 0.5rem 0.25rem;
+}
+.sub-point-title i {
+    display: block;
+    font-size: 0.8rem;
+    transform: translateY(7px);
+}
+/* ボーナスレベルチェック */
+.btn-check {
+    display: block;
+    margin: 0 auto;
+}
+.bonus-level-list li {
+    font-size: 1rem;
+}
+.bonus-level-point {
+    font-size: 0.9rem;
+}
+/* 示唆内容部分 */
+.sub-content-title {
+
 }

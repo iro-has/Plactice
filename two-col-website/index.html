@@ -239,59 +239,75 @@
                         </ul>
                     </div>
                     <!-- 目次に戻る機能、ホバーしたときに赤文字になる。＋ボタンっぽい見た目 -->
-                    <button>目次へ戻る</button>
+                    <a href="#content-nav-title" class="back-btn">目次へ戻る</a>
                 </div>
 
                 <div id="bonus-kinds" class="bonus-kinds">
-                    <h4>ボーナスの種類</h4>
+                    <div class="content-title">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <h4>ボーナスの種類</h4>
+                    </div>                    
                     <div class="text-container">
-                        <!-- ボーナスの場所に画像を付ける -->
+                        <!-- ボーナスの場所に画像を付ける、背景を水色に -->
                         <table>
                             <tr>
                                 <th>ボーナス</th>
                                 <th>払い出し枚数/特徴</th>
                             </tr>
                             <tr>
-                                <td>
-                                    ビックボーナス
-                                    【青７】
+                                <td class="bonus-info">
+                                    <p class="bonus-title">ビックボーナス<br>【青７】</p>
+                                    <img src="./images/blue-bonus.jpg" alt="青ＢＢ">
                                 </td>
-                                <td>
-                                    ３００枚
-                                    終了後は
-                                    リオチャンス高確へ
+                                <td class="bonus-detail">
+                                    <p class="payout">３００枚</p>
+                                    <div class="note">
+                                        終了後は<br>
+                                        リオチャンス高確へ
+                                    </div>                                    
                                 </td>                        
                             </tr>
                             <tr>
-                                <td>
-                                    ビックボーナス
-                                    【赤７】
+                                <td class="bonus-info">
+                                    <p class="bonus-title">ビックボーナス<br>【赤７】</p>
+                                    <img src="./images/red-bonus.jpg" alt="赤ＢＢ">
                                 </td>
-                                <td>
-                                    １００枚
-                                    終了後は
-                                    リオチャンス高確へ
+                                <td class="bonus-detail">
+                                    <p class="payout">１００枚</p>
+                                    <div class="note">
+                                        終了後は<br>
+                                        リオチャンス高確へ  
+                                    </div>                                    
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    レギュラーボーナス
+                                <td class="bonus-info">
+                                    <p class="bonus-title">レギュラーボーナス</p>
+                                    <img src="./images/reg-bonus.jpg" alt="REG">
                                 </td>
-                                <td>
-                                    ６０枚
+                                <td class="bonus-detail">
+                                    <p class="payout">６０枚</p>
                                 </td>
                             </tr>
                         </table>
                     </div>  
-                    <p>■ポイント
-                        <br>・RB終了後は前回の通常ゲーム数を引き継ぐ
-                        <br>└天井ゲーム数はリセットされない
-                    </p>
-                    <button>目次へ戻る</button>
+                    <div class="sub-point">
+                        <div class="sub-point-title">
+                            <i class="fa-solid fa-star"></i>
+                            <h5>ポイント</h5>
+                        </div>                        
+                        <p>・RB終了後は前回の通常ゲーム数を引き継ぐ<br>
+                            └天井ゲーム数はリセットされない
+                        </p>
+                    </div>                    
+                    <a href="#content-nav-title" class="back-btn">目次へ戻る</a>
                 </div>
 
                 <div id="bonus-sorting" class="bonus-sorting">
-                    <h4>ボーナスの振り分け</h4>
+                    <div class="content-title">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <h4>ボーナスの振り分け</h4>
+                    </div>                    
                     <div class="text-container">
                         <!-- ボーナスの背景を水色にする -->
                         <table>
@@ -300,20 +316,32 @@
                                 <th>振り分け</th>
                             </tr>
                             <tr>
-                                <td>レギュラーボーナス</td>
-                                <td>45.7%</td>
+                                <td class="bonus-info">
+                                    <p class="bonus-title">レギュラーボーナス</p>
+                                </td>
+                                <td class="bonus-detail">
+                                    <p>45.7%</p>
+                                </td>
                             </tr>
                             <tr>
-                                <td>ビックボーナス【赤７】</td>
-                                <td>49.4%</td>
+                                <td class="bonus-info">
+                                    <p class="bonus-title">ビックボーナス【赤７】</p>
+                                </td>
+                                <td class="bonus-detail">
+                                    <p>49.4%</p>
+                                </td>
                             </tr>
                             <tr>
-                                <td>ビックボーナス【青７】</td>
-                                <td>4.9%</td>
+                                <td class="bonus-info">
+                                    <p class="bonus-title">ビックボーナス【青７】</p>
+                                </td>
+                                <td class="bonus-detail">
+                                    <p>4.9%</p>
+                                </td>
                             </tr>
                         </table>
                     </div>
-                    <button>目次へ戻る</button>
+                    <a href="#content-nav-title" class="back-btn">目次へ戻る</a>
                 </div>
 
                 <div class="advertisement">
@@ -323,64 +351,87 @@
                 </div>
 
                 <div id="bonus-level" class="bonus-level">
-                    <h4>ボーナスレベルチェック</h4>
+                    <div class="content-title">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <h4>ボーナスレベルチェック</h4>
+                    </div>
+                    <img src="./images/red-btn.jpg" alt="ボタン画像" class="btn-check">                    
                     <div class="text-container">
-                        <ul class="text-container">
-                            <li>概要</li>
-                            <li>
-                                ・ボーナス確定画面（✕・？・？消化後）でPUSHボタンを押すと毎ゲーム
-                                <br>PUSHボタンの色が変化
-                            </li>
-                            <li>
-                                ・色によって次Gに狙え役（リプレイ or 3枚役）が成立した場合のボーナス内容を示唆
-                            </li>
+                        <ul class="bonus-level-list">
+                            <li class="caption">概要</li>
+                            <li>・ボーナス確定画面（✕・？・？消化後）でPUSHボタンを押すと毎ゲームPUSHボタンの色が変化</li>
+                            <li>・色によって次Gに狙え役（リプレイ or 3枚役）が成立した場合のボーナス内容を示唆</li>
                             <li>・レア役成立時はPUSHボタンが必ず青色に変化!?</li>
                         </ul>
-                        <p>■ポイント</p>
-                        <p>
-                            ・ボタンの色で次Gに狙え役（リプレイ or 3枚役）が成立した際のボーナス内容を示唆
-                            <br>└例）PUSHボタンが青に変化した状態で狙えが発生⇒青7ビッグボーナス濃厚!?
-                        </p>
-                        <p>
-                            ・ボーナス準備中（×・？・？消化後）レア役成立でチャンス！
-                            <br>└次Gに狙え役（リプレイ or 3枚役）成立で青7ビッグボーナス濃厚!?
-                        </p>
-                        <h4>示唆内容</h4><!-- 青く囲む -->
-                        <table>
-                            <!-- 色のところは水色背景に -->
-                            <tr>
-                                <th>PUSHボタンの色</th>
-                                <th>示唆内容</th>
-                            </tr>
-                            <tr>
-                                <td>白</td>
-                                <td>
-                                    次Gに狙え演出発生で
-                                    RB以上濃厚!?
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>赤</td>
-                                <td>
-                                    次ゲームに狙え演出発生で
-                                    赤7BB以上濃厚!?
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>青</td>
-                                <td>
-                                    次ゲームに狙え演出発生で
-                                    青7BB濃厚!?
-                                </td>
-                            </tr>
-                        </table>
                     </div>
-                    <button>目次へ戻る</button>
+                    <div class="sub-point">
+                        <div class="sub-point-title">
+                            <i class="fa-solid fa-star"></i>
+                            <h5>ポイント</h5>
+                        </div>
+                        <div class="bonus-level-point">
+                            <p>
+                                ・ボタンの色で次Gに狙え役（リプレイ or 3枚役）が成立した際のボーナス内容を示唆<br>
+                                └例）PUSHボタンが青に変化した状態で狙えが発生⇒青7ビッグボーナス濃厚!?
+                            </p> 
+                            <p>
+                                ・ボーナス準備中（×・？・？消化後）レア役成立でチャンス！
+                                <br>└次Gに狙え役（リプレイ or 3枚役）成立で青7ビッグボーナス濃厚!?
+                            </p>
+                        </div>                                               
+                    </div>
+
+                    <div class="sub-content">
+                        <div class="sub-content-title">
+                            <h4>示唆内容</h4><!-- 青く囲む -->
+                        </div>                    
+                        <div class="text-container">
+                            <table class="sub-content-list">
+                                <!-- 色のところは水色背景に -->
+                                <tr>
+                                    <th>PUSHボタンの色</th>
+                                    <th>示唆内容</th>
+                                </tr>
+                                <tr>
+                                    <td class="bonus-info">
+                                        <p class="bonus-title">白</p>
+                                    </td>
+                                    <td class="bonus-detail">
+                                        <p>
+                                            次Gに狙え演出発生で<br>
+                                            RB以上濃厚!?
+                                        </p>                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bonus-info">
+                                        <p class="bonus-title">赤</p>
+                                    </td>
+                                    <td class="bonus-detail">
+                                        <p>
+                                            次ゲームに狙え演出発生で<br>
+                                            赤7BB以上濃厚!?
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bonus-info">
+                                        <p class="bonus-title">青</p>
+                                    </td>
+                                    <td class="bonus-detail">
+                                        <p>
+                                            次ゲームに狙え演出発生で<br>
+                                            青7BB濃厚!?
+                                        </p>                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>                   
+                        <a href="#content-nav-title" class="back-btn">目次へ戻る</a> 
+                    </div>                    
                 </div>
             </section>
-        </main>
-
-        
+        </main>        
     </div>
 </body>
 </html>
