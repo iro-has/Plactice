@@ -43,7 +43,7 @@
                     <h3>解説ページMENU</h3>
                 </div>                
                 <div class="page-nav-list">
-                    <p>基本・攻略</p>
+                    <h5>基本・攻略</h5>
                     <ul class="nav-icon">
                         <li><!--横並び配置-->
                             <!-- アイコンを貼る。別のページを別のタグで開く -->
@@ -79,7 +79,7 @@
                         </li>
                     </ul>
 
-                    <p>通常関連</p>
+                    <h5>通常関連</h5>
                     <ul>
                         <li>
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="外部リンク" class="link-l"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -133,7 +133,7 @@
                         </li>
                     </ul>
 
-                    <p>ボーナス関連</p>
+                    <h5>ボーナス関連</h5>
                     <ul>
                         <li>
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="外部リンク" class="link-l"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -167,7 +167,7 @@
                         </li>
                     </ul>
 
-                    <p>AT関連</p>
+                    <h5>AT関連</h5>
                     <ul>
                         <li>
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="外部リンク" class="link-l"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -181,7 +181,7 @@
                         </li>
                     </ul>
 
-                    <p>実践データ</p>
+                    <h5>実践データ</h5>
                     <ul>
                         <li>
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="外部リンク" class="link-l"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -250,45 +250,49 @@
                     <div class="text-container">
                         <!-- ボーナスの場所に画像を付ける、背景を水色に -->
                         <table>
-                            <tr>
-                                <th>ボーナス</th>
-                                <th>払い出し枚数/特徴</th>
-                            </tr>
-                            <tr>
-                                <td class="bonus-info">
-                                    <p class="bonus-title">ビックボーナス<br>【青７】</p>
-                                    <img src="./images/blue-bonus.jpg" alt="青ＢＢ">
-                                </td>
-                                <td class="bonus-detail">
-                                    <p class="payout">３００枚</p>
-                                    <div class="note">
-                                        終了後は<br>
-                                        リオチャンス高確へ
-                                    </div>                                    
-                                </td>                        
-                            </tr>
-                            <tr>
-                                <td class="bonus-info">
-                                    <p class="bonus-title">ビックボーナス<br>【赤７】</p>
-                                    <img src="./images/red-bonus.jpg" alt="赤ＢＢ">
-                                </td>
-                                <td class="bonus-detail">
-                                    <p class="payout">１００枚</p>
-                                    <div class="note">
-                                        終了後は<br>
-                                        リオチャンス高確へ  
-                                    </div>                                    
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="bonus-info">
-                                    <p class="bonus-title">レギュラーボーナス</p>
-                                    <img src="./images/reg-bonus.jpg" alt="REG">
-                                </td>
-                                <td class="bonus-detail">
-                                    <p class="payout">６０枚</p>
-                                </td>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>ボーナス</th>
+                                    <th>払い出し枚数/特徴</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bonus-info">
+                                        <p class="bonus-title">ビックボーナス<br>【青７】</p>
+                                        <img src="./images/blue-bonus.jpg" alt="青ＢＢ">
+                                    </td>
+                                    <td class="bonus-detail">
+                                        <p class="payout">３００枚</p>
+                                        <div class="note">
+                                            終了後は<br>
+                                            リオチャンス高確へ
+                                        </div>                                    
+                                    </td>                        
+                                </tr>
+                                <tr>
+                                    <td class="bonus-info">
+                                        <p class="bonus-title">ビックボーナス<br>【赤７】</p>
+                                        <img src="./images/red-bonus.jpg" alt="赤ＢＢ">
+                                    </td>
+                                    <td class="bonus-detail">
+                                        <p class="payout">１００枚</p>
+                                        <div class="note">
+                                            終了後は<br>
+                                            リオチャンス高確へ  
+                                        </div>                                    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bonus-info">
+                                        <p class="bonus-title">レギュラーボーナス</p>
+                                        <img src="./images/reg-bonus.jpg" alt="REG">
+                                    </td>
+                                    <td class="bonus-detail">
+                                        <p class="payout">６０枚</p>
+                                    </td>
+                                </tr>
+                            </tbody>                            
                         </table>
                     </div>  
                     <div class="sub-point">
@@ -311,34 +315,38 @@
                     <div class="text-container">
                         <!-- ボーナスの背景を水色にする -->
                         <table>
-                            <tr>
-                                <th>ボーナス</th>
-                                <th>振り分け</th>
-                            </tr>
-                            <tr>
-                                <td class="bonus-info">
-                                    <p class="bonus-title">レギュラーボーナス</p>
-                                </td>
-                                <td class="bonus-detail">
-                                    <p>45.7%</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="bonus-info">
-                                    <p class="bonus-title">ビックボーナス【赤７】</p>
-                                </td>
-                                <td class="bonus-detail">
-                                    <p>49.4%</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="bonus-info">
-                                    <p class="bonus-title">ビックボーナス【青７】</p>
-                                </td>
-                                <td class="bonus-detail">
-                                    <p>4.9%</p>
-                                </td>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>ボーナス</th>
+                                    <th>振り分け</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bonus-info">
+                                        <p class="bonus-title">レギュラーボーナス</p>
+                                    </td>
+                                    <td class="bonus-detail">
+                                        <p>45.7%</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bonus-info">
+                                        <p class="bonus-title">ビックボーナス【赤７】</p>
+                                    </td>
+                                    <td class="bonus-detail">
+                                        <p>49.4%</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bonus-info">
+                                        <p class="bonus-title">ビックボーナス【青７】</p>
+                                    </td>
+                                    <td class="bonus-detail">
+                                        <p>4.9%</p>
+                                    </td>
+                                </tr>
+                            </tbody>                            
                         </table>
                     </div>
                     <a href="#content-nav-title" class="back-btn">目次へ戻る</a>
