@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+
+/* 全体設定 */
+html {
+    font-size: 100%;
+}
+body {
+    color: #555;
+    font-family: "Noto Serif JP", serif;
+}
