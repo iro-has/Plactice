@@ -1,10 +1,122 @@
 @charset 'UTF-8';
 
-/* 全体設定 */
+/* 共通設定 */
 html {
     font-size: 100%;
 }
 body {
-    color: #555;
     font-family: "Noto Serif JP", serif;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+main, footer {
+    background-color: #f5f5f5;
+}
+.section-title {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    background-color: #1f2a44;
+    color: #fff;
+}
+/* ヘッダー部分 */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #1f2a44;
+}
+.header-inner {
+    display: flex;
+    background-color: #1f2a44;
+    color: #f5f5f5;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.g-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+.g-nav li:hover {
+    color: #2f80ed;
+    border-bottom: 2px solid #2f80ed;
+}
+.g-nav li:nth-child(1) {
+    border-bottom: 3px solid #fff;
+}
+.g-nav li:nth-child(1):hover {
+    border-bottom: 2px solid #2f80ed;
+}
+/* メイン部分 */
+.hero {
+    position: relative;
+    background-image: url(../images/bg-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    padding: 4rem 0;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.hero-inner {
+    z-index: 1;
+    position: absolute;
+    text-align: right;
+    right: 3rem;
+    bottom: 3rem;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    font-size: 2rem;
+    line-height: 1.7;
+}
+.hero-title {
+    font-size: 3rem;
+}
+/* 会社概要 */
+.wrapper-about {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 4rem; 
+}
+/* 左側 */
+.about-l {
+    border: 1px solid #2f80ed;
+    width: 50%;
+    text-align: center;    
+    padding: 3rem;
+}
+.cp-title {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.line-underline {
+    font-size: 1.6rem;
+    line-height: 2;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent calc(2em - 1px),
+        #000 calc(2em - 1px),
+        #000 2em
+    );
+}
+
+
+/* 右側 */
+.about-r {
+    width: 45%;
+    text-align: center;
 }
